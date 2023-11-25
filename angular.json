@@ -96,10 +96,7 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "baseHref": "/flash-cards/"
-          }
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
