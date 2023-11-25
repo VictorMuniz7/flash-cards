@@ -1,0 +1,47 @@
+.deck-div{
+  width: 20.5em;
+  height: 58vh;
+  margin: 2em auto 1em;
+  position: relative;
+  background-color: black;
+  border-radius: 1em;
+  border-top-left-radius: 2.5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  img{
+    width: 19em;
+    height: 55vh;
+    border-radius: 1em;
+    position: absolute;
+    top: 0;
+  }
+}
+
+
+@media screen and (min-width: 30em){
+
+  .deck-div{
+    width: 26.8em;
+    height: 69vh;
+
+    img{
+      width: 25em;
+      height: 65vh;
+    }
+  }
+}
+
+@media screen and (min-width: 75em){
+
+  .deck-div{
+    width: 32em;
+    height: 74vh;
+
+    img{
+      width: 30em;
+      height: 70vh;
+    }
+  }
+}

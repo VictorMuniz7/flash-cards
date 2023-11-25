@@ -1,0 +1,24 @@
+<div class="card" #card>
+  <div class="card-inner">
+    <div class="front">
+      <div class="results">
+        <div>
+          <p>Total points</p>
+          <p class="value">{{ results.points}}/10</p>
+        </div>
+        <div>
+          <p>Time to finish</p>
+          <p class="value">{{ results.timeToFinish }}s</p>
+        </div>
+        <div>
+          <p>Time per question</p>
+          <p class="value">{{ results.timePerQuestion }}s</p>
+        </div>
+      </div>
+      <button class="main-button" (click)="card.classList.add('remove-card')" (click)="emitEvent()">Play Again</button>
+    </div>
+    <div class="back">
+      <img src="./assets/card-background.png" alt="Card Background">
+    </div>
+  </div>
+</div>

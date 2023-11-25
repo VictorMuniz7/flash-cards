@@ -1,0 +1,29 @@
+<div class="card" #card>
+  <div class="card-inner">
+    <div class="front">
+      <p class="question-number">Question {{questionNumber}}</p>
+      <div class="equation">
+        <div>
+          <p>{{ firstValue }}</p>
+        </div>
+        <div>
+          <p>{{ operator }}</p>
+        </div>
+        <div>
+          <p>{{ secondValue }}</p>
+        </div>
+      </div>
+      <div class="separator"></div>
+      <div class="answers">
+        @for (answer of answersArray; track $index) {
+          <div (click)="onPick(answerMark.textContent)">
+            <p #answerMark>{{ answer }}</p>
+          </div>
+        }
+      </div>
+    </div>
+    <div class="back">
+      <img src="./assets/card-background.png" alt="Card Background">
+    </div>
+  </div>
+</div>

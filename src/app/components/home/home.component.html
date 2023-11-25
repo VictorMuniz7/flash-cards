@@ -1,0 +1,11 @@
+<div class="card" #card>
+  <div class="card-inner">
+    <div class="front">
+      <p>Welcome to KRS Flash Cards! You'll encounter 10 math questions, each with 4 answer options. Select the correct option to score a point, and remember – the quicker, the better! 😃</p>
+      <button class="main-button" (click)="card.classList.add('remove-card')" (click)="emitEvent()">Start Game</button>
+    </div>
+    <div class="back">
+      <img src="./assets/card-background.png" alt="Card Background">
+    </div>
+  </div>
+</div>

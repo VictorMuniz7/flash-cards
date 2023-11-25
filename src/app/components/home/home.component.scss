@@ -1,0 +1,32 @@
+
+.front{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  p{
+    font-size: 1.35em;
+  }
+}
+
+@media screen and (min-width: 30em){
+
+  .front{
+
+    p{
+      font-size: 1.8em;
+    }
+  }
+}
+
+@media screen and (min-width: 75em){
+
+  .front{
+
+    p{
+      font-size: 2em;
+    }
+  }
+}
+
